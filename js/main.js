@@ -1,10 +1,10 @@
 var years = [1995,1965, 1950, 1980, 1990];
 
-function arrayCalc(arr, fn) {
+function arrayCalc(arr, callback) {
     var arrRes = [];
 
     for (var i = 0; i < arr.length; i++) {
-        arrRes.push(fn(arr[i]));
+        arrRes.push(callback(arr[i]));
         // console.log(arr[i]);
 
     }
@@ -51,17 +51,17 @@ console.log(fullAges);
 sumYears();
 
 
-// var a = [10,20,30,40]
-// var sum = 0
-// var avg = 0
-// function sumUP(a) {
-//    for (var i=0; i<a.length; i++){
-//       sum += a[i];
-//    }
-//    avg = (sum/a.length);
-// }
-// function display(callback) {
-//     callback(a);
-//     console.log("Average of array is " + avg);
-// }
-// display(sumUP);
+var a = [10,20,30,40]
+var sum = 0
+var avg = 0
+function sumUP(a) {
+   for (var i=0; i<a.length; i++){
+      sum += a[i];
+   }
+   avg = (sum/a.length);
+}
+function display(callback) {
+    callback(a);
+    console.log("Average of array is " + avg);
+}
+display(sumUP);
