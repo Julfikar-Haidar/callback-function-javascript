@@ -50,18 +50,19 @@ console.log(rates);
 console.log(fullAges);
 sumYears();
 
+// this is another callback function
 
-var a = [10,20,30,40]
-var sum = 0
-var avg = 0
-function sumUP(a) {
-   for (var i=0; i<a.length; i++){
-      sum += a[i];
-   }
-   avg = (sum/a.length);
-}
-function display(callback) {
-    callback(a);
-    console.log("Average of array is " + avg);
-}
-display(sumUP);
+// var a = [10,20,30,40]
+// var sum = 0
+// var avg = 0
+// function sumUP(a) {
+//    for (var i=0; i<a.length; i++){
+//       sum += a[i];
+//    }
+//    avg = (sum/a.length);
+// }
+// function display(callback) {
+//     callback(a);
+//     console.log("Average of array is " + avg);
+// }
+// display(sumUP);
