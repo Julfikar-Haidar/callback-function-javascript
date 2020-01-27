@@ -30,7 +30,6 @@ function maxHeartRate(el) {
 let sumYears = function () {
     let totalAge = 0;
     let count = 0;
-    let avg = 0;
     arrayCalc(years, function (obj) {
         totalAge = totalAge + obj;
         count++;
